@@ -6,5 +6,6 @@ router.get("/", (request, response, next) => {
     next()
 })
 router.use('/user', require('./user.route'))
+router.use('/session', require('./sessions.route'))
 
 module.exports = router

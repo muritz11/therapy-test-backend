@@ -1,0 +1,170 @@
+// therapists
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f65cc9f701be9659e47299",
+    "title": "Miss",
+    "surname": "Brianne",
+    "phone": "08011111111",
+    "email": "bennewt.scifq@gmail.com",
+    "userType": "therapist",
+    "createdAt": "2022-08-12T13:59:37.606Z",
+    "updatedAt": "2022-08-12T13:59:37.606Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f65cd7f701be9659e4729b",
+    "title": "Miss",
+    "surname": "Brianne",
+    "phone": "08011111111",
+    "email": "bennewt.scifq@gmail.com",
+    "userType": "therapist",
+    "createdAt": "2022-08-12T13:59:51.024Z",
+    "updatedAt": "2022-08-12T13:59:51.024Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f65f049a027cb48298ae44",
+    "title": "Mr",
+    "surname": "Walberg",
+    "phone": "08011111111",
+    "email": "mark.scifq@gmail.com",
+    "userType": "therapist",
+    "createdAt": "2022-08-12T14:09:08.304Z",
+    "updatedAt": "2022-08-12T14:09:08.304Z",
+    "__v": 0
+}
+
+
+// clients
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f666eaa28809055b67a819",
+    "title": "Mrs",
+    "surname": "Rose",
+    "phone": "08011111111",
+    "email": "red.rosess@gmail.com",
+    "userType": "client",
+    "dob": "NaN",
+    "guardianName": "stephanie",
+    "contactPermission": true,
+    "maritalStatus": "married",
+    "referrer": "stephanie",
+    "gender": "female",
+    "createdAt": "2022-08-12T14:42:50.936Z",
+    "updatedAt": "2022-08-12T14:42:50.936Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f6670d53c2031a01a59a9c",
+    "title": "Mrs",
+    "surname": "Rose",
+    "phone": "08011111111",
+    "email": "red.rosess@gmail.com",
+    "userType": "client",
+    "dob": "20-07-1987",
+    "guardianName": "stephanie",
+    "contactPermission": true,
+    "maritalStatus": "married",
+    "referrer": "stephanie",
+    "gender": "female",
+    "createdAt": "2022-08-12T14:43:25.811Z",
+    "updatedAt": "2022-08-12T14:43:25.811Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f6671253c2031a01a59a9e",
+    "title": "Mrs",
+    "surname": "Rose",
+    "phone": "08011111111",
+    "email": "red.rosess@gmail.com",
+    "userType": "client",
+    "dob": "20-07-1987",
+    "guardianName": "stephanie",
+    "contactPermission": true,
+    "maritalStatus": "married",
+    "referrer": "stephanie",
+    "gender": "female",
+    "createdAt": "2022-08-12T14:43:30.309Z",
+    "updatedAt": "2022-08-12T14:43:30.309Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f6672b53c2031a01a59aa0",
+    "title": "Mr",
+    "surname": "Lindelof",
+    "phone": "08011111111",
+    "email": "red.rosess@gmail.com",
+    "userType": "client",
+    "dob": "20-07-1987",
+    "guardianName": "stephanie",
+    "contactPermission": true,
+    "maritalStatus": "married",
+    "referrer": "stephanie",
+    "gender": "female",
+    "createdAt": "2022-08-12T14:43:55.358Z",
+    "updatedAt": "2022-08-12T14:43:55.358Z",
+    "__v": 0
+},
+{
+    "homeAddress": {
+    "addressLine1": "somewhere",
+    "town": "another where",
+    "country": "paisis",
+    "eirCode": "3938"
+    },
+    "_id": "62f6674253c2031a01a59aa2",
+    "title": "Mr",
+    "surname": "Lindelof",
+    "phone": "08011111111",
+    "email": "li.harry@gmail.com",
+    "userType": "client",
+    "dob": "20-07-1987",
+    "guardianName": "stephanie",
+    "contactPermission": true,
+    "maritalStatus": "married",
+    "referrer": "stephanie",
+    "gender": "female",
+    "createdAt": "2022-08-12T14:44:18.263Z",
+    "updatedAt": "2022-08-12T14:44:18.263Z",
+    "__v": 0
+}
