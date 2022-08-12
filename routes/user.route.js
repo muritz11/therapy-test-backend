@@ -1,10 +1,9 @@
 const router = require('express').Router()
 const { body } = require('express-validator')
 const { fetchUsers, newTherapist } = require('../controllers/usersController')
-const auth = require('../middleware/auth')
 
 // get all users
-router.get('/users', auth, fetchUsers)
+// router.get('/users', fetchUsers)
 
 
 /**********************
@@ -33,9 +32,9 @@ router.post(
     body('surname').not().isEmpty().withMessage('surname is required'),
     body('phone').not().isEmpty().withMessage('phone is required'),
     body('homeAddress.addressLine1').not().isEmpty().withMessage('address line 1 is required'),
-    body('homeAddress.town').not().isEmpty().withMessage('address line 1 is required'),
-    body('homeAddress.country').not().isEmpty().withMessage('address line 1 is required'),
-    body('homeAddress.eirCode').not().isEmpty().withMessage('address line 1 is required'),
+    body('homeAddress.town').not().isEmpty().withMessage('town is required'),
+    body('homeAddress.country').not().isEmpty().withMessage('country is required'),
+    body('homeAddress.eirCode').not().isEmpty().withMessage('eir code is required'),
     newTherapist
 )
 

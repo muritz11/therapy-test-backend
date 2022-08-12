@@ -24,7 +24,7 @@ module.exports.newTherapist = async (request, response) => {
     therapist.save()
         .then((result) => {
             response.status(201).send({
-                dt: user.userType,
+                status: 'successful',
                 message: "Therapist Created Successfully",
                 result,
             });
