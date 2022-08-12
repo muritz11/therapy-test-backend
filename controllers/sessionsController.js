@@ -38,3 +38,45 @@ module.exports.createSession = (request, response) => {
             });
         });
 }
+
+module.exports.updateSession = async (request, response) => {
+
+    const newData = request.body
+
+    const sess = await sessionsModel.updateOne({ _id: request.body.sessionId },
+    {
+        $set: newData
+    })
+
+    response.status(200).send({
+        status: "success",
+        message: "Success",
+        sess
+    })
+
+}
+
+module.exports.deleteSession = async (request, response) => {
+
+    const sess = await sessionsModel.deleteOne({ _id: request.body.sessionId })
+
+    response.status(200).send({
+        status: "success",
+        message: "Success",
+        sess
+    })
+
+}
+
+
+module.exports.fetchSessions = async (request, response) => {
+
+    const sess = await sessionsModel.find()
+
+    response.status(200).send({
+        status: 'success',
+        message: "Success",
+        sess
+    })
+
+}

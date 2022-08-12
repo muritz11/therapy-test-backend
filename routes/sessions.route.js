@@ -1,12 +1,12 @@
 const router = require('express').Router()
 const { body } = require('express-validator')
-const { createSession } = require('../controllers/sessionsController')
+const { createSession, updateSession, deleteSession, fetchSessions } = require('../controllers/sessionsController')
 
 // get all therapists
 // router.get('/therapists', fetchTherapist)
 
-// get all therapists
-// router.get('/clients', fetchClients)
+// get all sessions
+router.get('/fetch', fetchSessions)
 
 
 /**********************
@@ -33,5 +33,35 @@ router.post(
     body('fee').not().isEmpty().withMessage('fee is required'),
     createSession
 )
+
+
+
+/**********************
+* route url: baseUrl/session/update
+* endpoint request body: 
+{
+    "sessionId": String,
+    "clients": [clientId: String] | opt,
+    "therapist": therapistId | opt,
+    "sessionNumber": Number | opt,
+    "sessionAttendance": String | ['attended', 'cancelled', 'no show'] | opt,
+    "sessionType": String | opt,
+    "sessionNotes": String | opt,
+    "fee": Number | opt,
+}
+**********************/
+router.put('/update', 
+    body('sessionId').not().isEmpty().withMessage('session id is required'),
+    updateSession)
+
+    
+/**********************
+* route url: baseUrl/session/delete
+* endpoint request body: 
+{
+    "sessionId": String
+}
+**********************/
+router.delete('/delete', deleteSession)
 
 module.exports = router
