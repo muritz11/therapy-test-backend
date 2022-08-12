@@ -46,7 +46,7 @@ const UserSchema = new mongoose.Schema({
         type: String,
         enum: ['therapist', 'client']
     },
-    dob: Date,
+    dob: String,
     guardianName: String,
     contactPermission: Boolean,
     maritalStatus: {
