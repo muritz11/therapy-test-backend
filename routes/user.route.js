@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const { body } = require('express-validator')
-const { newClient, newTherapist, fetchTherapist, fetchClients } = require('../controllers/usersController')
+const { newClient, newTherapist, fetchTherapist, fetchClients, deleteUser } = require('../controllers/usersController')
 
 // get all therapists
 router.get('/therapists', fetchTherapist)
@@ -83,5 +83,14 @@ router.post(
     body('homeAddress.eirCode').not().isEmpty().withMessage('eir code is required'),
     newTherapist
 )
+
+/**********************
+* route url: baseUrl/user/delete
+* endpoint request body: 
+{
+    "userId": String,
+}
+**********************/
+router.delete('/delete', deleteUser)
 
 module.exports = router

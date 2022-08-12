@@ -99,3 +99,15 @@ module.exports.fetchClients = async (request, response) => {
     })
 
 }
+
+module.exports.deleteUser = async (request, response) => {
+
+    const user = await User.deleteOne({ _id: request.body.userId })
+
+    response.status(200).send({
+        status: "success",
+        message: "Success",
+        user
+    })
+
+}
