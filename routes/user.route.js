@@ -1,9 +1,12 @@
 const router = require('express').Router()
 const { body } = require('express-validator')
-const { fetchUsers, newClient, newTherapist } = require('../controllers/usersController')
+const { newClient, newTherapist, fetchTherapist, fetchClients } = require('../controllers/usersController')
 
-// get all users
-// router.get('/users', fetchUsers)
+// get all therapists
+router.get('/therapists', fetchTherapist)
+
+// get all therapists
+router.get('/clients', fetchClients)
 
 
 /**********************

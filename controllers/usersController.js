@@ -76,3 +76,26 @@ module.exports.newClient = async (request, response) => {
         });
 
 }
+
+
+module.exports.fetchTherapist = async (request, response) => {
+
+    const therapists = await User.find({ 'userType': 'therapist' })
+
+    response.status(200).send({
+        message: "Success",
+        therapists
+    })
+
+}
+
+module.exports.fetchClients = async (request, response) => {
+
+    const clients = await User.find({ 'userType': 'client' })
+
+    response.status(200).send({
+        message: "Success",
+        clients
+    })
+
+}
