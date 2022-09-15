@@ -1,4 +1,5 @@
 ## Built backend with Nodejs/express + mongoDb
+This is a REST API that provides CRUD functionality for a Client-Therapist Session Management System, the solution supports the creation and management of "therapy session" information as well as that of the clients and therapists.  
 For the database i created a single userSchema, then separated users based on the userType  
 
 ### app base url: 
