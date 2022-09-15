@@ -11,10 +11,10 @@ localhost:300/api
 /session/delete => delete a new session | method: delete  
 
 ### user endpoints:
-/user/therapists => fetch all therapists | method: get
-/user/clients => fetch all clients | method: get
-/user/create-client => create new client | method: post
-/user/create-therapist => create new therapist | method: post
-/user/delete => delete therapist/client | method: delete
+/user/therapists => fetch all therapists | method: get  
+/user/clients => fetch all clients | method: get  
+/user/create-client => create new client | method: post  
+/user/create-therapist => create new therapist | method: post  
+/user/delete => delete therapist/client | method: delete  
 
 
